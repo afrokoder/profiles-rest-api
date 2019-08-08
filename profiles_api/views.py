@@ -6,7 +6,7 @@ from profiles_api import serializers
 
 class HelloApiView(APIView):
     """ Test API View """
-    serializers_class = serializers.HelloSerializer
+    serializer_class = serializers.HelloSerializer
 
     def get(self, request, format=None):
         """ Returns a list of APIView features """
